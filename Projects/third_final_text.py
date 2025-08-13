@@ -31,7 +31,7 @@ print(f"Llama's response: {output_LLM1_inputLLM2}")
 # =========================
 # BLOQUE 2: INPUT A ANTHROPIC (vía requests)
 # =========================
-anthropic_api_key = "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"
+anthropic_api_key = "your api key"
 anthropic_url = "https://api.anthropic.com/v1/messages"
 anthropic_model = "claude-3-5-sonnet-20241022"
 
@@ -83,7 +83,7 @@ print(f"Anthropic's response: {response_text}")
 # =========================
 # BLOQUE 3: INPUT A CHATGPT
 # =========================
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "your api key"
 
 
 client = OpenAI(api_key=OPENAI_API_KEY)
