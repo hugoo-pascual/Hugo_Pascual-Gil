@@ -1,0 +1,8 @@
+To download Llama you have to follow the next steps:
+    1. Install Anaconda : https://www.anaconda.com/download
+    2. Create a virtual enviroment
+    3. Install Llama through huggingface (your own)
+    4. Install Transformers
+    5. Install Pytorch : pip3 install torch torchvision torchaudio --index-url
+## If cuda is not installed by default install it, but it should be.
+

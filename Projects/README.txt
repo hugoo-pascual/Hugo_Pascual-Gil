@@ -1,0 +1,1 @@
+For this code to work it must be mandatory for you to have Llama installed in your computer in an enviroment. This enviroment can be in anaconda or in python's virtual enviroments.
