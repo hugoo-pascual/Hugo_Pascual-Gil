@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* HEADER */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0.97;
+    z-index: 100;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100px;
+
+}
+
+/* Contenedor del header */
+.container__header {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.logo img {
+    width: 350px;
+}
+
+/* Menú normal */
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 16px;
+}
+
+.menu ul li a {
+    color: #00303e;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.menu ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #00303e;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #009c8c;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.menu ul li:hover a::before {
+    width: 100%;
+}
+.menu ul li:hover a::after{
+    width: 100%;
+}
+
+/* Redes sociales */
+.socialMedia {
+    display: flex;
+}
+
+.socialMedia a {
+    color: #009c8c;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.socialMedia a:hover {
+    color: #00ffe5;
+}
+
+/*SUBMENU*/
+
+nav ul li ul{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 100px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+nav ul li ul li{
+    padding-bottom: 15px;
+}
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 60;
+    border-radius: 10px;
+}
+
+.menu ul li ul li a::before{
+    display: none;
+}
+.menu ul li ul li a::after{
+    display: none;
+}
+
+.menu ul li ul li:hover a::after{
+    display: initial;
+}
+
+
+.menu ul li ul li:hover a::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #009c8c;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.menu ul li ul li:hover a::after {
+    width: 100%;
+}
+
+
+
+/* MENÚ HAMBURGUESA */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: #293241;
+}
+
+.card__accede{
+    display: flex;
+    flex-direction: column;
+}
+.descarga{
+    margin-top: 150px;
+}
+.card__accede h3{
+    margin-top: 290px;
+}
+
+/* ESTILOS RESPONSIVE */
+@media (max-width: 1100px) {
+    header{
+        height: 90px;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        background: #00303e;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        transition: 0.4s;
+        width: 40%;
+    }
+    
+    .logo{
+        margin-left: 20px;
+    }
+    
+
+    .menu ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu ul li {
+        margin: 20px 0;
+    }
+
+    .menu ul li a {
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Mostrar el ícono del menú */
+    .menu-icon {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .socialMedia{
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    /* Interacción del menú */
+    #menu-toggle:checked + .menu-icon + .menu {
+        right: 0;
+    }
+
+    /*Sub-menu*/
+
+    .menu ul li ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu ul li ul li a{
+        color: #293241;
+    }
+    nav ul li ul{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 67vh;
+        padding: 14px 0px;
+        visibility: hidden;
+        opacity: 0;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+        z-index: 10;
+        transition: all 300ms ease;
+        align-items: center;
+        margin-left: 30px;
+    }
+    nav ul li:hover ul{
+        visibility: visible;
+        opacity: 1;
+        top: 60;
+        border-radius: 10px;
+    }
+    .menu ul li ul li a::before{
+        display: none;
+    }
+    
+    .menu ul li ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background: #98c1d9;
+        transition: 0.4s;
+        border-radius: 10px;
+    }
+    
+    .menu ul li ul li:hover a::after {
+        width: 100%;
+    }
+    
+    nav ul li ul:before{
+        content:'';
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid white;
+        position: absolute;
+        top: -12px;
+        left: 115px;
+    }
+}
+@media (max-width: 500px){
+    header{
+        height: 70px;
+    }
+    .logo{
+        display: none;
+    }
+    .socialMedia{
+        margin-left: 0px;
+        margin-right: 50px;
+    }
+    .menu-icon {
+        margin-left: 50px;
+    }
+    .menu {
+        width: 60%;
+    }
+
+}

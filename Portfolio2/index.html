@@ -6,41 +6,41 @@
     <script src="https://kit.fontawesome.com/3c90cc23df.js" crossorigin="anonymous"></script>
     <body>
         <header>
+
             <div class="container__header">
                 <div class="logo">
-                    <img src="Imagenes/logossss.png" alt="">
+                    <a href="index.html"><img src="Imagenes/logossss.png" alt="Convive Logo"></a>
                 </div>
-                <div class="menu">
-                    <nav>
-                        <ul>
-                            <li><a href="#inicio">Home</a></li>
-                            <li><a href="#about">About Me</a></li>
-                            <li><a href="#leng">Languages</a></li>
-                            <li><a href="#proyectos">Proyects</a></li>
-                            <li><a href="#certificates">Certificates</a></li>
-                            <li><a href="#contacto">Contact</a></li>
-                        </ul>
-                    </nav>
 
-                    <div class="socialMedia">
-                        <a href="">
-                            <img src="Imagenes/Instagram.png" alt="" >
-                        </a>
-                        <a href="">
-                            <img src="Imagenes/facebook_logo.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="">
-                        </a>
-                        <a href="">
-                            <img src="Imagenes/twitter.webp" alt="">
-                        </a>
-                        <a href="">
-                            <img src="Imagenes/likedin.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="bars__menu">
-                    <span class="line1__bars-menu"></span>
-                    <span class="line2__bars-menu"></span>
-                    <span class="line3__bars-menu"></span>
+                <!-- Menú hamburguesa -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#inicio">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#leng">Languages</a></li>
+                        <li><a href="#proyectos">Proyects</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#contacto">Contact</a></li>
+                        <!--Sub Menu Hecho, por si acaso se necesita en el futuro
+                        <li class="submenu-toggle">
+                            <a href="#comunicacion">Videos</a>
+                            <ul class="submenu">
+                                <li><a href="Videos_JG.html">Junta de Gobierno</a></li>
+                                <li><a href="Videos_Vecinos.html">Vecinos</a></li>
+                                <li><a href="Videos_Conserjes.html">Conserjes</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </nav>
+
+                <div class="socialMedia">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </header>
@@ -50,7 +50,7 @@
                 <div class="cover">
                     <section class="text__cover">
                         <h1>Welcome to my Portfolio</h1>
-                        <a href="Archivos/Black Modern Professional Resume.pdf" download="Black Modern Professional Resume.pdf" class="btn__text-cover btn__text" target="_blank">MI Curriculum</a>
+                        <a href="Archivos/RSI_CV_Condensed_Professional_Final_Final.pdf" download="Black Modern Professional Resume.pdf" class="btn__text-cover btn__text" target="_blank">MI Curriculum</a>
                     </section>
                                   
                 </div>
@@ -312,38 +312,14 @@
             
         </main>
         <footer>
-            <div class="container__footer">            
-                <div class="box__footer">
-                    <div class="logo-footer">
-                        <img src="Imagenes/cap-log.png" alt="">
-                    </div>
-                </div>
-                <div class="box__footer">
-                    <h2>soluciones</h2>
-                    <a href="#">App Desarroyo</a>
-                    <a href="#">App Marketing</a>
-                    <a href="#">IOS Desarroyo</a>
-                    <a href="#">Android Desarroyo</a>
-                </div>
-                <div class="box__footer">
-                    <h2>compañia</h2>
-                    <a href="#">Acerca De</a>
-                    <a href="#">Trabajos</a>
-                    <a href="#">Proceso</a>
-                    <a href="#">Servicios</a>
-                </div>
-                <div class="box__footer">
-                    <h2>Redes Sociales</h2>
-                    <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-                    <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-                    <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-                    <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-                </div>
-            </div>
+            
             <div class="box__copyright">
                 <hr>
-                <p>Todos los derechos reservados © 2023 <b>Hugo Pascual Gil</b></p>
+                <p>Todos los derechos reservados © 2025 <b>Hugo Pascual Gil</b></p>
             </div>
         </footer>
+
+        <script src="scripts.js"></script>
+
     </body>
 </html>
